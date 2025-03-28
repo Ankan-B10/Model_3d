@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Model Showcase | Premium Kitchen & Bath Fixtures</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <div class="custom-cursor"></div>
+
+    <header>
+      <nav>
+        <div class="logo">3D Fixtures</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="model-container" id="main-model">
+          <div class="model-loading">Loading 3D Model...</div>
+          <div class="touch-instructions">Swipe to rotate the model</div>
+          <div class="scroll-hint">Scroll to rotate vertically</div>
+          <div class="rotation-controls">
+            <button class="rotate-up">↑</button>
+            <button class="rotate-down">↓</button>
+            <button class="rotate-left">←</button>
+            <button class="rotate-right">→</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h1>Hindware Tap</h1>
+          <p>
+            High-quality, photorealistic 3D model for designers and architects
+          </p>
+          <button class="download-btn">Download Model</button>
+        </div>
+      </section>
+
+      <section class="similar-models" id="products">
+        <h2>Similar 3D Models</h2>
+        <div class="models-grid">
+          <div class="model-card" data-model="kitchen-faucet">
+            <div class="model-preview"></div>
+            <h3>Premium Kitchen Faucet</h3>
+            <button>View Model</button>
+          </div>
+          <div class="model-card" data-model="toilet">
+            <div class="model-preview"></div>
+            <h3>Swiss Madison Toilet</h3>
+            <button>View Model</button>
+          </div>
+          <div class="model-card" data-model="shower">
+            <div class="model-preview"></div>
+            <h3>Modern Shower System</h3>
+            <button>View Model</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 3D Fixtures Showcase. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
